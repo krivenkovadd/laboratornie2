@@ -29,7 +29,6 @@ class Book:
             raise ValueError("Количество страниц не может быть отрицательным")
         self.pages = new_pages
 
-
 class MiniCooper:
     def __init__(self, model: str, year: int, fuel_capacity: float, color: str):
         self.model = model
@@ -63,7 +62,6 @@ class MiniCooper:
         if amount > remaining_capacity:
             raise ValueError("Объем топливного бака недостаточен для заправки")
         self.fuel_level += amount
-
 
 class BankAccount:
     def __init__(self, account_number: str, owner_name: str, balance: float = 0.0):
@@ -113,7 +111,6 @@ class BankAccount:
         1000.0
         """
         return self.balance
-
 
 if __name__ == "__main__":
     doctest.testmod()
