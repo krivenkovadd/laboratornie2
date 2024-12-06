@@ -1,4 +1,4 @@
-from task import Book, MiniCooper, BankAccount
+from task_1 import Book, MiniCooper, BankAccount
 
 if __name__ == "__main__":
  book = Book('Мастер и Маргарита', 'Михаил Булгаков', 512)
