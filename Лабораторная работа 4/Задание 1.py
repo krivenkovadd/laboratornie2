@@ -64,6 +64,7 @@ class VK(SocialNetwork):
 
         :param message: Текст сообщения.
         """
+        self._connect_to_server()
         print(f"Сообщение опубликовано в группе {self.group}: {message}")
 
     def join_group(self, group_name: str) -> None:
@@ -72,6 +73,7 @@ class VK(SocialNetwork):
 
         :param group_name: Название группы.
         """
+        self._connect_to_server()
         print(f"Вы вступили в группу: {group_name}")
 
 
@@ -95,4 +97,5 @@ class Facebook(SocialNetwork):
 
         :param photo_path: Путь к файлу фотографии.
         """
+        self._connect_to_server()
         print(f"Фотография опубликована: {photo_path}")
