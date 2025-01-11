@@ -33,6 +33,7 @@ class SocialNetwork:
 
         :param message: Текст сообщения.
         """
+        self._connect_to_server()
         print(f"Сообщение опубликовано: {message}")
 
     def _connect_to_server(self) -> None:
